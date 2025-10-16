@@ -134,7 +134,7 @@ select the test bench and compile it. It will come under Worklib. Under Worklib,
 
 The cds.lib file is an ASCII text file. It defines which libraries are accessible and where they are located. It contains statements that map logical library names to their physical directory paths. For this Design, you will define a library called “worklib”
 
-![WhatsApp Image 2025-10-14 at 21 04 19_9b2fec99](https://github.com/user-attachments/assets/4a0427ab-10d1-402e-b72d-59672c6a3ae4)
+
 
 
 <img width="1920" height="1080" alt="Screenshot (288)" src="https://github.com/user-attachments/assets/eb26c34c-d30f-4e7d-b514-c9b5af3fcb6b" />
@@ -165,7 +165,7 @@ After elaboration, the file will come under snapshot. Select the test bench and 
 
 #### Fig 5: Elaboration Launch Option
 
-![WhatsApp Image 2025-10-14 at 21 04 55_ac5f4e70](https://github.com/user-attachments/assets/1b92d81d-0e9a-4777-9bab-c5d8992b0e3c)
+
 
 
 <img width="1920" height="1080" alt="Screenshot (289)" src="https://github.com/user-attachments/assets/6c218d2e-0786-4351-bca9-c13df02f8888" />
@@ -182,7 +182,7 @@ Simulations allow dumping design and test bench signals into a waveform
 
 Steps for simulation – Run the simulation command with simulator options
 
-![WhatsApp Image 2025-10-14 at 21 05 50_a047961f](https://github.com/user-attachments/assets/72c1dccf-66c0-44e6-bd4c-aab405b74563)
+
 
 
 <img width="1920" height="1080" alt="Screenshot (290)" src="https://github.com/user-attachments/assets/851e69c9-0d19-4021-9e8a-1c7091a39d45" />
@@ -190,7 +190,7 @@ Steps for simulation – Run the simulation command with simulator options
 
 #### Fig 6: Design Browser window for simulation
 
-![WhatsApp Image 2025-10-14 at 21 06 44_c1b61434](https://github.com/user-attachments/assets/18745dcc-e836-4a03-9e26-66479e262150)
+
 
 
 <img width="1920" height="1080" alt="Screenshot (286)" src="https://github.com/user-attachments/assets/8d2938c3-7dd7-4ada-9842-edc0b73fc7c4" />
@@ -204,7 +204,6 @@ Synthesis requires three files as follows,
 
 ◦ Verilog/VHDL Files (.v or .vhdl or .vhd)
 
-![WhatsApp Image 2025-10-14 at 21 07 40_545cca33](https://github.com/user-attachments/assets/0f94e154-4141-48c4-a464-3733120274ea)
 
 
 <img width="1920" height="1080" alt="Screenshot (287)" src="https://github.com/user-attachments/assets/8c7e6fff-d509-4e1b-ab4d-670b1ec88bd3" />
