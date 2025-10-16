@@ -90,6 +90,9 @@ We are simulating a verilog design without using any libraries
 
 Click “OK” in the “nclaunch: Open Design Directory” window, as shown in the figure below
 
+<img width="1920" height="1080" alt="Screenshot (284)" src="https://github.com/user-attachments/assets/7ef12766-f778-4cb3-8c10-df61e436a12c" />
+
+
 #### Fig 2: Selection of Don’t include any libraries
 An ‘NCLaunch window’ appears as shown in the figure below
 
@@ -128,6 +131,9 @@ select the test bench and compile it. It will come under Worklib. Under Worklib,
 
 The cds.lib file is an ASCII text file. It defines which libraries are accessible and where they are located. It contains statements that map logical library names to their physical directory paths. For this Design, you will define a library called “worklib”
 
+<img width="1920" height="1080" alt="Screenshot (288)" src="https://github.com/user-attachments/assets/eb26c34c-d30f-4e7d-b514-c9b5af3fcb6b" />
+
+
 #### Step 2: Elaboration:
 To check the port connections in a hierarchical design
 
@@ -153,6 +159,9 @@ After elaboration, the file will come under snapshot. Select the test bench and 
 
 #### Fig 5: Elaboration Launch Option
 
+<img width="1920" height="1080" alt="Screenshot (289)" src="https://github.com/user-attachments/assets/6c218d2e-0786-4351-bca9-c13df02f8888" />
+
+
 #### Step 3: Simulation:
 – Simulate with the given test vectors over a period of time to observe the output behaviour.
 
@@ -164,7 +173,13 @@ Simulations allow dumping design and test bench signals into a waveform
 
 Steps for simulation – Run the simulation command with simulator options
 
+<img width="1920" height="1080" alt="Screenshot (290)" src="https://github.com/user-attachments/assets/851e69c9-0d19-4021-9e8a-1c7091a39d45" />
+
+
 #### Fig 6: Design Browser window for simulation
+
+<img width="1920" height="1080" alt="Screenshot (286)" src="https://github.com/user-attachments/assets/8d2938c3-7dd7-4ada-9842-edc0b73fc7c4" />
+
 
 #### Fig 7: Simulation Waveform Window
 
@@ -173,6 +188,8 @@ Synthesis requires three files as follows,
 ◦ Liberty Files (.lib)
 
 ◦ Verilog/VHDL Files (.v or .vhdl or .vhd)
+
+<img width="1920" height="1080" alt="Screenshot (287)" src="https://github.com/user-attachments/assets/8c7e6fff-d509-4e1b-ab4d-670b1ec88bd3" />
 
 ##### Performing Synthesis
 
@@ -189,6 +206,9 @@ The Liberty files are present in the library path,
 • Genus Script file with .tcl file Extension commands are executed one by one to synthesize the netlist. Or use source run.tcl command in the terminal window to view the netlist, and a log file will be created in the working folder.
 
 #### Fig 8: Synthesis RTL Schematic using case and ifelseif construct
+
+<img width="1920" height="1080" alt="Screenshot (292)" src="https://github.com/user-attachments/assets/5db3ca5d-acdf-4eaa-bc6c-4eb27d5eb6e7" />
+
 
 #### Fig 9: Area report of case and ifelseif construct
 
