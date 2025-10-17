@@ -1,5 +1,24 @@
 # Exp 4 Comparative Study of 32-Bit ALU Implementations Using Case and If-Else Constructs
-
+module alu_32bit_case(y,a,b,f); 
+input [31:0]a;
+input [31:0]b;
+input [2:0]f; 
+output reg [31:0]y; 
+always@(*)
+begin 
+case(f)
+3'b000:y=a&b;	//AND Operation
+3'b001:y=a|b;	//OR Operation
+3'b010:y=~(a&b);//NAND Operation
+3'b011:y=~(a|b);//NOR Operation
+3'b100:y=a+b;	//Addition
+3'b101:y=a-b;	//Subtraction
+3'b110:y=a*b;   //Multiply
+3'b111:y=a^b;	// XOR Operation
+default:y=32'bx;
+endcase 
+end 
+endmodule
 ## Aim: 
 Write a Verilog code for 32 32-bit ALU supporting four logical and four arithmetic operations, use case statement and if statement for ALU behavioral modeling. 
 
