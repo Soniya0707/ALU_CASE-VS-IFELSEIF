@@ -1,24 +1,5 @@
 # Exp 4 Comparative Study of 32-Bit ALU Implementations Using Case and If-Else Constructs
-module alu_32bit_case(y,a,b,f); 
-input [31:0]a;
-input [31:0]b;
-input [2:0]f; 
-output reg [31:0]y; 
-always@(*)
-begin 
-case(f)
-3'b000:y=a&b;	//AND Operation
-3'b001:y=a|b;	//OR Operation
-3'b010:y=~(a&b);//NAND Operation
-3'b011:y=~(a|b);//NOR Operation
-3'b100:y=a+b;	//Addition
-3'b101:y=a-b;	//Subtraction
-3'b110:y=a*b;   //Multiply
-3'b111:y=a^b;	// XOR Operation
-default:y=32'bx;
-endcase 
-end 
-endmodule
+
 ## Aim: 
 Write a Verilog code for 32 32-bit ALU supporting four logical and four arithmetic operations, use case statement and if statement for ALU behavioral modeling. 
 
@@ -52,8 +33,30 @@ A Blank Document opens up into which the following source code can be typed.
 
 To verify the Functionality using the Test Bench
 
+
 #### Source Code – Using Case Statement :
-(Include program here)
+```
+module alu_32bit_case(y,a,b,f); 
+input [31:0]a;
+input [31:0]b;
+input [2:0]f; 
+output reg [31:0]y; 
+always@(*)
+begin 
+case(f)
+3'b000:y=a&b;	//AND Operation
+3'b001:y=a|b;	//OR Operation
+3'b010:y=~(a&b);//NAND Operation
+3'b011:y=~(a|b);//NOR Operation
+3'b100:y=a+b;	//Addition
+3'b101:y=a-b;	//Subtraction
+3'b110:y=a*b;   //Multiply
+3'b111:y=a^b;	// XOR Operation
+default:y=32'bx;
+endcase 
+end
+endmodule
+```
 
 Use the Save option or Ctrl+S to save the code, or click on the save option from the top-right corner and close the text file.
 
@@ -61,16 +64,85 @@ Use the Save option or Ctrl+S to save the code, or click on the save option from
 Similarly, create your test bench using gedit <filename_tb>.v to open a new blank document (alu_case_tb.v).
 
 #### Test Bench :
-(Include test bench program here)
+```
+module alu_32bit_tb_case; 
+reg [31:0]a;
+reg [31:0]b;
+reg [2:0]f;
+wire [31:0]y;
+alu_32bit_case DUT(.y(y),.a(a),.b(b),.f(f)); 
+initial
+begin a=32'h00000000; 
+b=32'h00100001; 
+#10 f=3'b000;
+#10 f=3'b001;
+#10 f=3'b010;
+#10 f=3'b011;
+#10 f=3'b100;
+#10 f=3'b101;
+#10 f=3'b110;
+#10 f=3'b111;
+end 
+initial
+#150 $finish; 
+endmodule
+```
 
 Use the Save option or Ctrl+S to save the code, or click on the save option from the top-right corner and close the text file.
 
 #### Source Code - Using If Statement :
-(Include program here)
-
+```
+module alu_ifelseif(y,a,b,f);
+input [31:0]a;
+input [31:0]b;
+input [2:0]f; 
+output reg [31:0]y; 
+always@(*)
+begin
+if(f==3'b000)
+y=a&b;	               //AND Operation 
+else if (f==3'b001)
+y=a|b;	              //OR Operation
+else if (f==3'b010)
+y=~(a&b);	      //NAND Operation
+else if (f==3'b011)
+y=~(a|b);	      //NOR Operation
+else if (f==3'b100)
+y=~(a^b);	      //XOR Operation
+else if (f==3'b101)
+y=a+b;                //Addition
+ else if (f==3'b110)
+y=a-b;	              //Subtraction 
+else if (f==3'b111)
+y=a*b;	              //Multiply 
+else
+y=32'bx; 
+end 
+endmodule
+```
 #### Test Bench :
-(Include program here)
-
+```
+module alu_ifelseif_tb; 
+reg [31:0]a;
+reg [31:0]b;
+reg [2:0]f;
+wire [31:0]y;
+alu_ifelseif dut(.y(y),.a(a),.b(b),.f(f)); 
+initial
+begin a=32'h00000000; b=32'h00100001; 
+#10 f=3'b000;
+#10 f=3'b001;
+#10 f=3'b010;
+#10 f=3'b011;
+#10 f=3'b100;
+#10 f=3'b101;
+#10 f=3'b110;
+#10 f=3'b111;
+end 
+initial
+#100 $finish; 
+endmodule
+```
 Functional Simulation for each design
 
 Invoke the cadence environment by typing the commands below
