@@ -134,6 +134,7 @@ select the test bench and compile it. It will come under Worklib. Under Worklib,
 
 The cds.lib file is an ASCII text file. It defines which libraries are accessible and where they are located. It contains statements that map logical library names to their physical directory paths. For this Design, you will define a library called “worklib”
 
+![WhatsApp Image 2025-10-04 at 08 58 43_6d10abab](https://github.com/user-attachments/assets/225087ec-d523-4218-a564-9b09bb8dcd0c)
 
 
 
@@ -165,6 +166,7 @@ After elaboration, the file will come under snapshot. Select the test bench and 
 
 #### Fig 5: Elaboration Launch Option
 
+![WhatsApp Image 2025-10-04 at 08 58 14_80393a2b](https://github.com/user-attachments/assets/5208be44-f376-437f-9a03-585315016cf2)
 
 
 
@@ -183,6 +185,7 @@ Simulations allow dumping design and test bench signals into a waveform
 Steps for simulation – Run the simulation command with simulator options
 
 
+![WhatsApp Image 2025-10-04 at 09 02 38_5159f3e7](https://github.com/user-attachments/assets/aa71c00c-9f3e-440f-be9e-fc1a969cfa0d)
 
 
 <img width="1920" height="1080" alt="Screenshot (290)" src="https://github.com/user-attachments/assets/851e69c9-0d19-4021-9e8a-1c7091a39d45" />
@@ -190,6 +193,7 @@ Steps for simulation – Run the simulation command with simulator options
 
 #### Fig 6: Design Browser window for simulation
 
+![WhatsApp Image 2025-10-04 at 09 08 40_f8c29f4d](https://github.com/user-attachments/assets/3be9615a-4225-4542-b241-078847654488)
 
 
 
@@ -204,6 +208,7 @@ Synthesis requires three files as follows,
 
 ◦ Verilog/VHDL Files (.v or .vhdl or .vhd)
 
+![WhatsApp Image 2025-10-04 at 09 31 02_3dc579f5](https://github.com/user-attachments/assets/984e9512-9609-4ebd-aefa-e986bbf672a0)
 
 
 <img width="1920" height="1080" alt="Screenshot (287)" src="https://github.com/user-attachments/assets/8c7e6fff-d509-4e1b-ab4d-670b1ec88bd3" />
@@ -224,6 +229,7 @@ The Liberty files are present in the library path,
 
 #### Fig 8: Synthesis RTL Schematic using case and ifelseif construct
 
+![WhatsApp Image 2025-10-04 at 09 39 06_96866646](https://github.com/user-attachments/assets/8656b8c6-5622-4a9b-97da-f45d7b3f298f)
 
 
 <img width="1920" height="1080" alt="Screenshot (292)" src="https://github.com/user-attachments/assets/5db3ca5d-acdf-4eaa-bc6c-4eb27d5eb6e7" />
@@ -231,11 +237,27 @@ The Liberty files are present in the library path,
 
 #### Fig 9: Area report of case and ifelseif construct
 
+![WhatsApp Image 2025-10-04 at 09 41 49_fbe31f12](https://github.com/user-attachments/assets/6ed954ec-0fdc-42b5-9b43-23c54ce1537f)
+
+<img width="1920" height="1080" alt="Screenshot (294)" src="https://github.com/user-attachments/assets/a3f79bae-f4fa-428e-8a80-91aa5acb66d9" />
+
 #### Fig 10: Power Report of case and ifelseif construct
+
+![WhatsApp Image 2025-10-04 at 09 43 00_f34e4460](https://github.com/user-attachments/assets/a202c08e-2a4a-4a99-8cd7-204f4426bf07)
+
+<img width="1920" height="1080" alt="Screenshot (295)" src="https://github.com/user-attachments/assets/11e96a89-2c7f-42d0-8c67-3080bdfff344" />
+
 
 #### Fig 11: Timing Report of case and ifelseif construct
 
+![WhatsApp Image 2025-10-04 at 09 46 33_374a5958](https://github.com/user-attachments/assets/c602d3c9-fbca-4fac-a706-2b8e961e3ef5)
+
+<img width="1920" height="1080" alt="Screenshot (296)" src="https://github.com/user-attachments/assets/e37452e7-0ee2-4c96-87ec-bcf89de4421f" />
+
+
 #### Fig 12: Tabulate Area,Power and Timing Report Comparision of ALU using case and ifelseif construct
+
+![WhatsApp Image 2025-10-17 at 22 05 48_850bbeea](https://github.com/user-attachments/assets/905eed01-7a20-411a-9fdb-f064fdd9b1ea)
 
 ## Result
 The 32-bit ALU implemented using behavioural case statements and if–elseif constructs was successfully verified under Incisive (ncvlog/ncsim) for all tested vectors. Both implementations were functionally correct and synthesizable. Synthesis using Cadence Genus generated gate-level netlists along with area, timing, and power reports.
